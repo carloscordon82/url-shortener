@@ -1,0 +1,16 @@
+# Dependency directory
+node_modules
+
+# Debug log from npm
+npm-debug.log
+
+# Environment Variables should NEVER be published
+# We are submitting it for learning purposes 
+.env
+tailwind.config.json
+tailwind.css
+tailwind.config.js
+.DS_Store
+# for maintenance purposes - not best practices
+package-lock.json
+

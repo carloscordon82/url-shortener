@@ -1,0 +1,392 @@
+.movies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.horz {
+  font-family: "Montserrat", sans-serif;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+.tab {
+  margin-left: 25px;
+  font-size: xx-large;
+}
+
+.container-posters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.movie-container2 {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.movie-container select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  padding: 5px 15px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.container2 {
+  perspective: 1000px;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout1 {
+  background-color: #444451;
+  height: 32px;
+  width: 35px;
+  margin: 0px;
+  margin-top: 29px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.layout1:nth-of-type(2) {
+  margin-right: 35px;
+}
+
+.layout1:nth-of-type(4) {
+  margin-right: 35px;
+}
+
+.layout1:nth-last-of-type(2) {
+  margin-left: 35px;
+}
+
+.layout1:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.layout2 {
+  background-color: #444451;
+  height: 32px;
+  width: 35px;
+  margin: 5px;
+  margin-top: 9px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.layout2:nth-of-type(2) {
+  margin-right: 5px;
+}
+
+.layout2:nth-of-type(4) {
+  margin-right: 5px;
+}
+
+.layout2:nth-last-of-type(2) {
+  margin-left: 5px;
+}
+
+.layout2:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .layout1:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+.showcase .layout2:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+}
+
+.selected {
+  background-color: #0081cb;
+}
+
+.occupied {
+  background-color: orange;
+}
+
+.you {
+  background-color: red;
+}
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  background: gray;
+  height: 80px;
+  width: 90%;
+  margin: 15px 0;
+  margin-bottom: 30px;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+
+p.text {
+  margin: 40px 0;
+}
+
+p.text span {
+  color: #0081cb;
+  font-weight: 600;
+  box-sizing: content-box;
+}
+
+.credits a {
+  color: #fff;
+}
+
+.seatNumber {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 9px;
+  font-size: 12px;
+  pointer-events: none;
+  color: white;
+}
+
+body {
+  background: #e0e5ec;
+}
+
+.top-bar {
+  width: 100%;
+  height: 10px;
+  background: #e0e5ec;
+}
+
+.middle-bar {
+  width: 100%;
+  height: 10px;
+  background: orange;
+}
+
+.container-all-venues {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  height: 170px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+}
+.container-venues {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-content: start;
+  align-items: start;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+}
+
+.container-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+}
+
+.container-dates div {
+  background-color: rgb(38, 38, 131);
+  padding: 8px;
+  border-radius: 10px;
+}
+.top-element {
+  border-bottom: 10px solid black;
+}
+.bottom-element {
+  border-top: 10px solid black;
+}
+.container-dates div a {
+  color: white;
+}
+
+.nav-item {
+  margin: 20px;
+}
+
+.small-poster {
+  border-radius: 15px;
+  margin: 25px;
+  box-shadow: black;
+  box-shadow: 20px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.small-pic {
+  border-radius: 5px;
+
+  box-shadow: black;
+  box-shadow: 5px;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.dates-venue {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  justify-items: start;
+  margin-left: 25px;
+}
+
+.venue-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 140px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+}
+
+.dates-venue a {
+  margin-left: 25px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+}
+
+.address {
+  color: rgb(67, 67, 67);
+  font-size: x-large;
+}
+
+.delete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.delete .d-btn {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.special-bg {
+  width: 100%;
+  height: 200%;
+  background: yellow;
+  height: 150px;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.demo-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.demo-bg {
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.demo-bg2 {
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.demo-content {
+  position: relative;
+}
