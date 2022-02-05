@@ -34,6 +34,7 @@ module.exports = (app) => {
     if (req.session.user) {
       User.findById(req.session.user._id).then((user) => {
         req.app.locals.globalUser = user;
+        req.app.locals.fullUrl = req.protocol + "://" + req.get("host");
         next();
       });
     } else {
